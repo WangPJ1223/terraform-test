@@ -10,5 +10,5 @@ variable "machine_name" {
 
 variable "security_groups_ids" {
   description = "instance name"
-  type        = list
+  type        = list(any)
 }

@@ -1,5 +1,5 @@
 locals {
-  prefix               = "tm-pjw"
+  prefix = "tm-pjw"
 }
 
 data "aws_ami" "amazon_linux_2023" {
@@ -14,8 +14,8 @@ data "aws_ami" "amazon_linux_2023" {
 }
 
 resource "aws_instance" "example" {
-  ami           = data.aws_ami.amazon_linux_2023.id
-  instance_type = var.machine_type
+  ami             = data.aws_ami.amazon_linux_2023.id
+  instance_type   = var.machine_type
   security_groups = tolist(var.security_groups_ids)
 
   tags = {
