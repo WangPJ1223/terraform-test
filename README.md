@@ -1,4 +1,4 @@
-# Terraform Demo Project
+# Terraform Demo
 
 ## How to use
 
