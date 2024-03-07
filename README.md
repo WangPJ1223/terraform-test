@@ -1,6 +1,6 @@
 # Terraform Demo Project
 
-## How to use
+## How to use?
 
 ```shell
 terraform -chdir=./deployment/ec2/ init
